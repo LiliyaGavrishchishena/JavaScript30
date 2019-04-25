@@ -17,7 +17,7 @@ img {
 body {
   margin: 0;
   padding: 0;
-  background: url('../img/bg.jpg') no-repeat center center fixed;
+  background: url('../img/bg.jpeg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -35,7 +35,7 @@ body {
 .key {
   border: 0.1rem solid #fff;
   border-radius: 0.5rem;
-  margin: 1rem;
+  margin: 0.3rem;
   font-size: 1rem;
   padding: 1rem 0.5rem;
   transition: all 0.07s ease;
@@ -78,6 +78,9 @@ kbd {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 10% 1rem;
   }
+  .key {
+    margin: 0.7rem;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -87,5 +90,8 @@ kbd {
   .keys {
     grid-template-columns: repeat(9, 1fr);
     padding: 30% 1rem;
+  }
+  .key {
+    margin: 1rem;
   }
 }

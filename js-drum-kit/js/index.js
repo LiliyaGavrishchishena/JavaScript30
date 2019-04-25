@@ -15,7 +15,7 @@
   const onMouseDown = e => {
     const key = e.target;
     const audio = document.querySelector(
-      'audio[data-key="' + e.target.getAttribute('data-key') + '"]'
+      `audio[data-key="${e.target.getAttribute('data-key')}"]`
     );
     playSound(key, audio);
   };
