@@ -39,11 +39,11 @@ function draw(e) {
     ctx.lineWidth--;
   }
 }
-canvas.addEventListener('mousedown', e => {
+canvas.addEventListener('mousedown' || 'touchstart', e => {
   isDrawing = true;
   [lastX, lastY] = [e.offsetX, e.offsetY];
 });
 
-canvas.addEventListener('mousemove', draw);
-canvas.addEventListener('mouseup', () => (isDrawing = false));
+canvas.addEventListener('mousemove' || 'touchmove', draw);
+canvas.addEventListener('mouseup' || 'touchend', () => (isDrawing = false));
 canvas.addEventListener('mouseout', () => (isDrawing = false));
